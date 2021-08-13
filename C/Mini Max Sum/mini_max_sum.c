@@ -1,15 +1,15 @@
 #include "stdio.h"
 
 int main(){
-    int arr[5] = {1, 2, 3, 4, 5};
-    int num, temp=0, length, minSum=0, maxSum=0;
+    long arr[5] = {1, 2, 3, 4, 5};
+    long num, temp=0, length, minSum=0, maxSum=0;
     
 // calculate length of array
     length = sizeof(arr)/sizeof(arr[0]);
     
 // take input element in arrya from user
     for (int i = 0; i<length; i++) {
-        scanf("%d\n", &arr[i]);
+        scanf("%ld\n", &arr[i]);
     }
 
 // sort the array using simple swaping method
@@ -33,7 +33,7 @@ int main(){
         maxSum = maxSum + arr[i];
     }
     
-    printf("%d %d", minSum, maxSum);
+    printf("%ld %ld", minSum, maxSum);
    
     
    return 0; 
