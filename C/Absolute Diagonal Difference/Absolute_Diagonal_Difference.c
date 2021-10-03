@@ -1,11 +1,18 @@
 #include "stdio.h"
 
+
+// Negative to positive Method
 int abs_val(int y){
     if(y<0)
     return(y*-1);
     else
     return(y);
 }
+
+/*
+or we can use "abs()" with "stdlib.h" 
+like : n = abs(y);
+*/
 
 int main(){
     int arr[100][100];
